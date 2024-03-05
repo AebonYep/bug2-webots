@@ -1,0 +1,63 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.577349977063556 0.5773500696970674 0.5773507608079362 2.0943989599242863
+  position 4.1443306975824346 -0.4665703643246957 38.275276317478145
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 12 9
+  floorTileSize 1 1
+}
+Wall {
+  translation 0.256175 -0.633583 0
+  name "MidBottom-1(1)"
+  size 2 2 0.5
+}
+Wall {
+  translation 0.636175 -1.97358 0
+  name "MidBottom-1(2)"
+  size 1 1 0.5
+}
+Pioneer3dx {
+  hidden position_0_0 -1.4485678506902757
+  hidden position_0_1 100.30640636391706
+  hidden position_0_2 100.33324548296683
+  hidden rotation_1 0.05144840234248337 -0.7061703077982413 -0.7061703465032663 3.0387864028103446
+  hidden position_1_0 -213.71681094581862
+  hidden rotation_2 -1 0 0 0.08851050171268221
+  hidden rotation_4 0.6292142427428482 -0.6292142529669802 -0.4562662167997423 2.2854871883781347
+  hidden rotation_9 0.36539370102451907 -0.36539367201321227 -0.8561395375196179 1.7254973681336416
+  translation -4.060737878003763 2.7141040965159995 0.09485810183630328
+  rotation -0.010159350932478457 -0.5231082463160146 -0.8522056971323383 0.07160573581661892
+  controller "my_controller"
+  supervisor TRUE
+  extensionSlot [
+    Display {
+      name "reportDisplay"
+      width 500
+      height 500
+    }
+    Display {
+      name "sensorDisplay"
+      width 500
+      height 500
+    }
+  ]
+}
+DEF target TrafficCone {
+  translation 2.74859 2.74054 0
+}
